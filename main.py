@@ -8,7 +8,9 @@ weight = input("enter your weight in kg: ")
 result1 = int(weight)
 result2 = float(height)
 
-result = result1 / result2 ** 2
+result3 = result1 / result2 ** 2
+
+result = int(result3)
 
 print(result)
 
