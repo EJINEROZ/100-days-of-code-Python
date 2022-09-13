@@ -1,14 +1,32 @@
 # 🚨 Don't change the code below 👇
-# two_digit_number = input("Type a two digit number: ")
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
 # 🚨 Don't change the code above 👆
 
-####################################
 #Write your code below this line 👇
 
-two_digit = input('type a two digit number: ')
-first_digit = two_digit[0]
-second_digit = two_digit[1]
-result = int(first_digit) + int(second_digit)
+
+result1 = int(weight)
+result2 = float(height)
+
+result3 = result1 / result2 ** 2
+
+result = int(result3)
+
 print(result)
 
-# print(int (5 + 5))
+if result < 18.5:
+  print(f'Your BMI is {result}, you are underweight')
+elif result < 25:
+  print(f'Your BMI is {result}, you have a normal weight')
+elif result < 30:
+    print(f'Your BMI is {result}, you are slightly overweight')
+elif result < 35:
+    print(f'Your BMI is {result}, you are obese')
+elif result > 35:
+  print(f'Your BMI is {result}, you are clinically obese')
+ 
+
+
+  
+
